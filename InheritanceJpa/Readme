@@ -1,5 +1,5 @@
-This project is using JPA single table strategy to map class hierarchy: the entities from different classes with a common ancestor are placed 
-in a single table. 
-It uses specification to query attributes from super class as well as from subclass. 
+This project is using JPA single table strategy to map class hierarchy: the entities from different classes (Painting and Scupture)  with a common ancestor are placed 
+in a single table (ArtPiece). 
+It uses specification to query attributes from super class (ArtPiece) as well as from subclass (Painting). 
 In ArtPieceSpecificatoin, builder.treat() is used to change to subclass domain in order to get the attribute on it. 
 Root<Painting> paintingRoot = builder.treat(root, Painting.class);
