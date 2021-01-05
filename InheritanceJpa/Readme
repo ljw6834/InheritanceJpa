@@ -3,3 +3,11 @@ in a single table (ArtPiece).
 It uses specification to query attributes from super class (ArtPiece) as well as from subclass (Painting). 
 In ArtPieceSpecificatoin, builder.treat() is used to change to subclass domain in order to get the attribute on it. 
 Root<Painting> paintingRoot = builder.treat(root, Painting.class);
+
+the below link is how to generate MetaModel using hibernate-jpamodelgen, which generates metamodel classes in 
+target/generated-sources folder. The added dependency in pom.xml will enable when the application is compile, the metamodel 
+classes are generated. 
+
+https://stackoverflow.com/questions/3037593/how-to-generate-the-jpa-entity-metamodel
+https://vladmihalcea.com/jpa-criteria-metamodel/
+
